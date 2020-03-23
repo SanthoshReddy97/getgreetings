@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +26,7 @@ namespace getgreetings
 
             string responseMessage = string.IsNullOrEmpty(name)
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"Hello, {name}. Welcome to Azure functions. Automatic CI/CD operations are working successfully.";
+                : $"Hello, {name}. Welcome to Azure functions. Testing again the azure devops pipelines.";
 
             return new OkObjectResult(responseMessage);
         }
